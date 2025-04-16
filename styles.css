@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    background: gray;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.allElements {
+    max-width: 750px;
+    padding-left: clamp(20px, 5vw, 60px);
+    padding-right: clamp(20px, 5vw, 60px);
+    background: white;
+    box-shadow: 6px 10px 10px -2px rgba(0,0,0,0.3);
+    width: 100%;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    margin-top: 50px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 200;
+    margin: 10px 0 50px;
+}
+
+hr {
+    width: 100%;
+    margin: 20px 0;
+}
+
+form input, form select {
+    margin-bottom: 4px;
+    font-size: 1rem;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+#practice {
+    display: block;
+}
+
+#pm {
+    margin: 2px 10px 4px 0;
+}
+
+#serviceQuantity {
+    margin-left: 5px;
+}
+
+.proceduresToggleOff {
+    background: linear-gradient(to left, white 50%, #07A3C8 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 150ms, box-shadow 0.15s ease-in-out;
+    padding: 3px 20px;
+    font-size: 1rem;
+    box-shadow: 6px 10px 10px -2px rgba(0,0,0,0.3);
+    cursor: pointer;
+    border-radius: 3px;
+    border: 2px solid #07A3C8;
+    background-color: white;
+    margin: 3px 0 8px;
+}
+
+.proceduresToggleOff:active {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    transform: scale(0.95);
+    transform-origin: 0;
+}
+        
+.proceduresToggleOff:hover, .proceduresToggleOn:hover{
+    background-position: left bottom;
+    background-color: #07A3C8;
+    border: 2px solid #07A3C8;
+    color: white;
+}
+
+.proceduresToggleOn {
+    padding: 3px 20px;
+    font-size: 1rem;
+    box-shadow: 0 0 0 0 rgba(0,0,0,0);
+    cursor: pointer;
+    transition: box-shadow 0.15s ease-in-out;
+    background-color: #45BBD6;
+    border-radius: 3px;
+    border: 2px solid #45BBD6;
+    margin: 3px 0 8px;
+    color: white;
+    transform: scale(0.95);
+    margin-left: 0;
+    transform-origin: 0;
+}
+
+.copyButton {
+    width: 200px;
+    background-color: #EE3D00;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    height: 34px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+    text-decoration: none;
+    display: none;
+    box-shadow: 6px 10px 10px -2px rgba(0,0,0,0.3);
+}
+
+.copyButton:hover {
+    background-color: #DD3900;
+}
+
+.copyButton:active {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.copyButton:hover {
+    background-color: #c23202;
+}
+
+.copyButton:active {
+    transform: scale(0.90);
+}
+
+#emailBody {
+    padding-bottom: 20px;
+}
