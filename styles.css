@@ -8,7 +8,7 @@ body {
     justify-content: center;
 }
 
-.allElements {
+.page {
     max-width: 750px;
     padding-left: clamp(20px, 5vw, 60px);
     padding-right: clamp(20px, 5vw, 60px);
@@ -17,7 +17,7 @@ body {
     width: 100%;
 }
 
-.title {
+.allElements {
     display: flex;
     flex-direction: column;
     justify-content: center;

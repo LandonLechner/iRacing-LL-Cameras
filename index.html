@@ -7,54 +7,54 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="allElements">
-            <div class="title">
-            <img src="./MedBest Logo.png" width="175px">
-            <h1>Handoff Email Builder</h1>
+    <main class="container">
+        <section class="page">
+            <div class="allElements">
+                <img src="./MedBest Logo.png" width="175px">
+                <h1>Handoff Email Builder</h1>
+            <form>
+                <input autocomplete="off" type="text" id="practice" placeholder="Practice name" style="width:270px">
+                <input autocomplete="off" type="text" id="client" placeholder="Client name" style="width:270px">
+                <article>
+                    <label for="closedWonDate">Closed won date:</label>
+                    <input autocomplete="off" type="date" id="closedWonDate">
+                </article>
+                <button type="button" id="proceduresToggle" class="proceduresToggleOff" style="display:block">The list of procedures HAS BEEN confirmed by the customer</button>
+                <article id="services">
+                    <label>Quantity of Services:</label>
+                    <input type="number" id="serviceQuantity" value="10" style="width:50px">
+                </article>
+                <select name="pm" id="pm">
+                    <option selected disabled value="Select PM">Select PM</option>
+                    <option value="Jonathan Whitfield">Jonathan Whitfield</option>
+                    <option value="Robert Shah">Robert Shah</option>
+                    <option value="Ruby Blackwood">Ruby Blackwood</option>
+                    <option value="Veronica Holt">Veronica Holt</option>
+                    <option value="Marcus Anderson">Marcus Anderson</option>
+                </select>
+                <select name="csm" id="csm">
+                    <option selected disabled value="Select CSM">Select CSM</option>
+                    <option value="Erica Maginnis">Erica Maginnis</option>
+                    <option value="Michael Buskirk">Michael Buskirk</option>
+                    <option value="Jordan Dalton">Jordan Dalton</option>
+                    <option value="Annie Valencia">Annie Valencia</option>
+                    <option value="Mary Curtis">Mary Curtis</option>
+                    <option value="Johnny Ziegler">Johnny Ziegler</option>
+                    <option value="Fernando Sanchez">Fernando Sanchez</option>
+                    <option value="Vicki Paul">Vicki Paul</option>                    
+                    <option value="Jon Moore">Jon Moore</option>
+                    <option value="Cris Hundley">Cris Hundley</option>
+                    <option value="Kim Johnson">Kim Johnson</option>
+                </select>
+            </form>
+            <hr>
+                <button class="copyButton" id="copyButton">Copy Subject Line</button>
+                <p id="emailSubject"></p>
+                <button class="copyButton" id="copyButton2">Copy Email Body</button>
+                <p id="emailBody"></p>
             </div>
-	    <form>
-	        <input autocomplete="off" type="text" id="practice" placeholder="Practice name" style="width:270px">
-    	    <input autocomplete="off" type="text" id="client" placeholder="Client name" style="width:270px">
-    	    <div>
-        	    <label>Closed won date:</label>
-        	    <input autocomplete="off" type="date" id="closedWonDate">
-    	    </div>
-    	    <button type="button" id="proceduresToggle" class="proceduresToggleOff" style="display:block">The list of procedures HAS BEEN confirmed by the customer</button>
-    	    <div id="services">
-        	    <label>Quantity of Services:</label>
-        	    <input type="number" id="serviceQuantity" value="10" style="width:50px">
-    	    </div>
-    	    <select name="pm" id="pm">
-    	        <option selected disabled value="Select PM">Select PM</option>
-                <option value="Jonathan Whitfield">Jonathan Whitfield</option>
-                <option value="Robert Shah">Robert Shah</option>
-                <option value="Ruby Blackwood">Ruby Blackwood</option>
-                <option value="Veronica Holt">Veronica Holt</option>
-                <option value="Marcus Anderson">Marcus Anderson</option>
-            </select>
-    	    <select name="csm" id="csm">
-    	        <option selected disabled value="Select CSM">Select CSM</option>
-	            <option value="Erica Maginnis">Erica Maginnis</option>
-                <option value="Michael Buskirk">Michael Buskirk</option>
-                <option value="Jordan Dalton">Jordan Dalton</option>
-                <option value="Annie Valencia">Annie Valencia</option>
-                <option value="Mary Curtis">Mary Curtis</option>
-                <option value="Johnny Ziegler">Johnny Ziegler</option>
-                <option value="Fernando Sanchez">Fernando Sanchez</option>
-                <option value="Vicki Paul">Vicki Paul</option>                    
-                <option value="Jon Moore">Jon Moore</option>
-                <option value="Cris Hundley">Cris Hundley</option>
-                <option value="Kim Johnson">Kim Johnson</option>
-            </select>
-	    </form>
-        <hr>
-            <button class="copyButton" id="copyButton">Copy Subject Line</button>
-            <p id="emailSubject"></p>
-            <button class="copyButton" id="copyButton2">Copy Email Body</button>
-            <p id="emailBody"></p>
-        </div>
-    </div>
+        </section>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>

@@ -57,7 +57,7 @@ window.onload = function ()
         }
             
         let emailSubject = document.querySelector("#emailSubject").innerHTML = 
-            `<p>${practice} - Welcome to MedBest!</p>`;
+            `${practice} - Welcome to MedBest!`;
         
         document.querySelector('#copyButton').style.display = "block";
         document.querySelector('#copyButton2').style.display = "block";
