@@ -3,57 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MedBest Marketing Handoff Email Builder</title>
+    <title>iRacing LL Cameras</title>
+    <link rel="icon" href="data:,">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <main class="container">
-        <section class="page">
-            <div class="allElements">
-                <img src="./MedBest Logo.png" width="175px">
-                <h1>Handoff Email Builder</h1>
-            <form>
-                <input autocomplete="off" type="text" id="practice" placeholder="Practice name" style="width:270px">
-                <input autocomplete="off" type="text" id="client" placeholder="Client name" style="width:270px">
-                <article>
-                    <label for="closedWonDate">Closed won date:</label>
-                    <input autocomplete="off" type="date" id="closedWonDate">
-                </article>
-                <button type="button" id="proceduresToggle" class="proceduresToggleOff" style="display:block">The list of procedures HAS BEEN confirmed by the customer</button>
-                <article id="services">
-                    <label>Quantity of Services:</label>
-                    <input type="number" id="serviceQuantity" value="10" style="width:50px">
-                </article>
-                <select name="pm" id="pm">
-                    <option selected disabled value="Select PM">Select PM</option>
-                    <option value="Jonathan Whitfield">Jonathan Whitfield</option>
-                    <option value="Robert Shah">Robert Shah</option>
-                    <option value="Ruby Blackwood">Ruby Blackwood</option>
-                    <option value="Veronica Holt">Veronica Holt</option>
-                    <option value="Marcus Anderson">Marcus Anderson</option>
-                </select>
-                <select name="csm" id="csm">
-                    <option selected disabled value="Select CSM">Select CSM</option>
-                    <option value="Erica Maginnis">Erica Maginnis</option>
-                    <option value="Michael Buskirk">Michael Buskirk</option>
-                    <option value="Jordan Dalton">Jordan Dalton</option>
-                    <option value="Annie Valencia">Annie Valencia</option>
-                    <option value="Mary Curtis">Mary Curtis</option>
-                    <option value="Johnny Ziegler">Johnny Ziegler</option>
-                    <option value="Fernando Sanchez">Fernando Sanchez</option>
-                    <option value="Vicki Paul">Vicki Paul</option>                    
-                    <option value="Jon Moore">Jon Moore</option>
-                    <option value="Cris Hundley">Cris Hundley</option>
-                    <option value="Kim Johnson">Kim Johnson</option>
-                </select>
-            </form>
-            <hr>
-                <button class="copyButton" id="copyButton">Copy Subject Line</button>
-                <p id="emailSubject"></p>
-                <button class="copyButton" id="copyButton2">Copy Email Body</button>
-                <p id="emailBody"></p>
-            </div>
-        </section>
+    <main class="main-container">
+        <div class="all-elements">
+            <section class="cols" id="left-col">
+                <section class="cam-section" id="initial" tabindex="0">
+                    <ol>
+                        <li>Select a car/driver that you expect to continue driving for the next 5 - 10 minutes</li>
+                        <li>Choose Far Chase cam</li>
+                        <li>Activate camera setting using Ctrl-F12</li>
+                        <li><span class="red-black framed">GROUP</span>: Uncheck Use temporary edits</li>
+                    </ol>
+                </section>
+                <div class="divider"></div>
+                <section class="cam-section" id="five-nine" tabindex="0">
+                    <ol start="5">
+                            <li>Click <span class="yellow-black framed">CREATE</span></li>
+                            <li>Change group name to <span class="cam-name">LL_FrontFar (Far Front)</span></li>
+                            <li><span class="red-black framed">CAMERA</span>: Click <span class="yellow-black framed">INSERT</span></li>
+                            <li><span class="red-black framed">GROUP</span>: Move previous camera back to Available list on the right</li>
+                            <li><span class="red-black framed">CAMERA</span>: Make these edits:
+                                <div class="settings">
+                                    <span class="white-black framed">Aim: Static</span>
+                                    <span class="white-black framed">X: 26</span>
+                                    <span class="white-black framed">P: -17</span>
+                                    <span class="white-black framed">Z: 24</span>
+                                    <span class="white-black framed">POV: 78</span>
+                                    <span class="empty framed">Mic:</span>
+                                </div>
+                            </li>
+                        </ol>
+                    </section>
+                    <div class="divider"></div>
+                    <section class="cam-section" id="ten-fourteen" tabindex="0">
+                        <ol start="10">
+                            <li><span class="red-black framed">GROUP</span>: Click <span class="yellow-black framed">CREATE</span></li>
+                            <li>Change group name to <span class="cam-name">LL_Top (Top Down)</span></li>
+                            <li><span class="red-black framed">CAMERA</span>: Click <span class="yellow-black framed">INSERT</span></li>
+                            <li><span class="red-black framed">GROUP</span>: Move previous camera back to Available list on the right</li>
+                            <li><span class="red-black framed">CAMERA</span>: Make these edits:
+                                <div class="settings">
+                                    <span class="white-black framed">Aim: AtCar</span>
+                                    <span class="white-black framed">X: -4</span>
+                                    <span class="empty framed">P:</span>
+                                    <span class="white-black framed">Z: 22</span>
+                                    <span class="white-black framed">POV: 60</span>
+                                    <span class="empty framed">Mic:</span>
+                                </div>
+                            </li>
+                        </ol>
+                    </section>
+                    <div class="divider"></div>
+                    <section class="cam-section" id="fifteen-nineteen" tabindex="0">
+                        <ol start="15">
+                            <li><span class="red-black framed">GROUP</span>: Click <span class="yellow-black framed">CREATE</span></li>
+                            <li>Change group name to <span class="cam-name">LL_Chase (Drone Chase)</span></li>
+                            <li><span class="red-black framed">CAMERA</span>: Click <span class="yellow-black framed">INSERT</span></li>
+                            <li><span class="red-black framed">GROUP</span>: Move previous camera back to Available list on the right</li>
+                            <li><span class="red-black framed">CAMERA</span>: Make these edits:
+                                <div class="settings">
+                                    <span class="white-black framed">Aim: AtGroup</span>
+                                    <span class="white-black framed">X: -12</span>
+                                    <span class="empty framed">P:</span>
+                                    <span class="white-black framed">Z: 5</span>
+                                    <span class="white-black framed">POV: 95</span>
+                                    <span class="empty framed">Mic:</span>
+                                </div>
+                            </li>
+                        </ol>
+                    </section>    
+                </ol>
+            </section>
+            <section class="cols" id="right-col">
+                <div class="divider top-right-divider"></div>
+                <section class="cam-section" id="twenty-twenty-four" tabindex="0">
+                    <ol start="20">
+                        <li><span class="red-black framed">GROUP</span>: Click <span class="yellow-black framed">CREATE</span></li>
+                        <li>Change group name to <span class="cam-name">LL_Wing (Wing)</span></li>
+                        <li><span class="red-black framed">CAMERA</span>: Click <span class="yellow-black framed">INSERT</span></li>
+                        <li><span class="red-black framed">GROUP</span>: Move previous camera back to Available list on the right</li>
+                        <li><span class="red-black framed">CAMERA</span>: Make these edits (enter the Offset X last):
+                            <div class="settings">
+                                <span class="white-black framed">Aim: Static</span>
+                                <span class="white-black framed">X: 0.05</span>
+                                <span class="white-black framed">P: -66</span>
+                                <span class="white-black framed">Z: 107</span>
+                                <span class="white-black framed">POV: 80</span>
+                                <span class="white-black framed">Mic: 0</span>
+                            </div>
+                        </li>
+                    </ol>    
+                    </section>
+                    <div class="divider"></div>
+                    <section class="cam-section" id="twenty-five-twenty-nine" tabindex="0">
+                        <ol start="25">
+                            <li><span class="red-black framed">GROUP</span>: Click <span class="yellow-black framed">CREATE</span></li>
+                            <li>Change group name to <span class="cam-name">LL_Cockpit (Cockpit 2</span>)</li>
+                            <li>Move CamCockpit to Active list on the left</li>
+                            <li>Move previous camera back to Available list on the right</li>
+                            <li><span class="red-black framed">CAMERA</span>: Make this edits:
+                                <div class="settings">
+                                    <span class="empty framed" id="last-aim">Aim:</span>
+                                    <span class="empty framed">X:</span>
+                                    <span class="empty framed">P:</span>
+                                    <span class="empty framed">Z:</span>
+                                    <span class="white-black framed">POV: 80</span>
+                                    <span class="empty framed">Mic:</span>
+                                </div>
+                            </li>
+                        </ol>
+                    </section>
+                    <div class="divider"></div>   
+                    <section class="cam-section" id="last-two" tabindex="0">
+                        <ol start="29">
+                            <li><span class="red-black framed">GROUP</span>: <span class="yellow-black framed" id="save-track">SAVE TRACK</span> as <span class="cam-name">LL_track.cam</span></li>
+                            <li>Set Temporary edits checkbox back to active</li>
+                        </ol>
+                    </section>
+                </ol>
+            </section>
+            <footer id="footer">
+                <h2>Also keep in mind...</h3>
+                <ul>
+                    <li>If the focus car changes unexpectedly during the process, and you can only select the scenic camera, hitting the live button () should allow you to once again choose other cameras and resume the process. If this still does not work, try Ctrl-F12 to close out of camera settings, and then Ctrl-F12 to resume.</li>
+                    <li>Regarding display order, note that when <span class="yellow-black-last framed">CREATE</span> is clicked, the new camera will always be listed after the currently active camera.</li>
+                    <li>You cannot reorder cameras once they are created.</li>
+                </ul>
+            </footer>
+        </div>
     </main>
     <script src="script.js"></script>
 </body>
