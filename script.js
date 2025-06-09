@@ -1,6 +1,6 @@
 const camSections = document.querySelectorAll('.cam-section');
 const initial = document.querySelector('#initial');
-const midSections = Array.from(camSections).splice(1).splice(0,5);
+const midSections = Array.from(camSections).slice(1, 6);
 const last = document.querySelector('#last-two');
 const redBlack = document.querySelectorAll('.red-black');
 const yellowBlack = document.querySelectorAll('.yellow-black');
@@ -16,9 +16,10 @@ const goGrayAll = () => {
     [camSections, redBlack, yellowBlack, whiteBlack].forEach(el =>
         colorHelper(el, "color", gray))
     colorHelper(divider, "backgroundColor", gray);
-    camSections.forEach(el => colorHelper(el.querySelectorAll('li'), "color", gray))
-    camSections.forEach(el => 
-        colorHelper(el.querySelectorAll('span:not(.cam-name)'), "border", "1px solid rgba(255, 255, 255, 0.2)"));
+    camSections.forEach(el => { 
+        colorHelper(el.querySelectorAll('li'), "color", gray)
+        colorHelper(el.querySelectorAll('span:not(.cam-name)'), "border", "1px solid rgba(255, 255, 255, 0.2)");
+    });
 };
 
 const resetColors = () => {
@@ -31,26 +32,23 @@ const resetColors = () => {
 };
 
 const focused = (el) => {
-    goGrayAll();
-    const containedRedBlack = el.querySelectorAll('.red-black')
-    if (containedRedBlack.length > 1) {
-        colorHelper(containedRedBlack, "color", "red");
-    } else {
-        el.querySelector('.red-black').style.color = "red";
-    }
-    colorHelper(el.querySelectorAll('li'), "color", "#ddd");
-    colorHelper(el.querySelectorAll('.white-black'), "color", "#ddd");    
-    colorHelper(divider, "backgroundColor", "#333");
-    el.querySelectorAll('span:not(.cam-name)').forEach(span => span.style.border = "1px solid #888");
-    const containedYellowBlack = el.querySelectorAll('.yellow-black')
-    if (containedYellowBlack.length > 1) {
-        colorHelper(containedYellowBlack, "color", "#bbbb00");
-    } else if (containedYellowBlack.length === 1) {
-        el.querySelector('.yellow-black').style.color = "#bbbb00";
-    } else {
-        return;
-    }
-}
+  goGrayAll();
+
+  const highlight = [
+    { selector: '.red-black', color: 'red' },
+    { selector: '.yellow-black', color: '#bbbb00' },
+    { selector: '.white-black', color: '#ddd' }
+  ];
+
+  highlight.forEach(({ selector, color }) => {
+    const matches = el.querySelectorAll(selector);  
+    if (matches.length) colorHelper(matches, 'color', color);
+  });
+
+  colorHelper(el.querySelectorAll('li'), "color", "#ddd");
+  colorHelper(divider, "backgroundColor", gray);
+  colorHelper(el.querySelectorAll('span:not(.cam-name)'), "border", "1px solid #888");
+};
 
 camSections.forEach(el => {
     ['mouseleave', 'focusout'].forEach(e => 
