@@ -41,7 +41,9 @@ const focused = (el) => {
   ];
 
   highlight.forEach(({ selector, color }) => {
-    const matches = el.querySelectorAll(selector);  
+    console.log({ selector, color })
+    const matches = el.querySelectorAll(selector);
+    console.log(matches.length)  
     if (matches.length) colorHelper(matches, 'color', color);
   });
 
