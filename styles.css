@@ -4,7 +4,12 @@ body {
     color: #ddd;
 }
 
-.main-container {
+#top {
+    display: flex;
+    justify-content: center;
+}
+
+.main-container1 {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -12,13 +17,27 @@ body {
     margin-top: 2rem;
 }
 
-.all-elements {
+.main-container2 {
+    height: 100vh;
+    margin-top: 2rem;
+}
+
+.all-elements1 {
     max-width: 1800px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     line-height: 1.5rem;
 }
+
+.all-elements2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: 1.5rem;
+}
+
 
 .stripe {
     position: absolute;
@@ -40,12 +59,56 @@ body {
     height: 15px;
 }
 
+.tab-label {
+    font-size: 1.2rem;
+    margin: 1px;
+    padding: 5px;
+    width: 8rem;
+    text-align: center;
+    -webkit-user-select: none;
+    -ms-user-select: none; 
+    user-select: none; 
+    transition: linear 250ms;
+}
+
+.tab-label:hover, .tab-label:active {
+    background: #333;
+}
+
 .cols {
     width: 100%;
 }
 
 ol {
     margin: 0;
+}
+
+.btn {
+    background-color: #29919f;
+    margin: 1rem 1rem 3rem;
+    width: 30rem;
+    height: 6rem;
+    border-radius: 60px;
+    color: white;
+    font-size: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    transition: 
+        background-color 0.3s ease,
+        transform 0.2s ease,
+        border 1s ease;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 6px 10px 10px -2px rgba(0,0,0,0.3);
+    border: 2px solid #29919f;
+}
+.btn:hover{
+    background-color: #000;
+    border: solid 2px #ddd;
+}
+
+.btn:active {
+    transform: scale(0.90);
 }
 
 .divider {

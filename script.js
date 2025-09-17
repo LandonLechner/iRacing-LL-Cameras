@@ -1,3 +1,59 @@
+let msg = document.querySelector(`#msg1`)
+let msgText = msg.textContent
+
+msg.addEventListener('click', function() {
+    navigator.clipboard.writeText(msg.textContent);
+        
+    msg.innerText = "Copied!";
+    
+    setTimeout(() => {
+        msg.innerText = msgText;
+    }, 1300);
+})
+
+const preRace = document.querySelector('#pre-race');
+const race = document.querySelector('#race');
+const mc1 = document.querySelector('.main-container1');
+const mc2 = document.querySelector('.main-container2');
+const label1 = document.querySelector('.label1');
+const label2 = document.querySelector('.label2');
+
+mc2.style.display= 'none'
+label1.style.borderBottom = "2px solid #fff"
+label2.style.borderBottom = "2px solid #333"
+
+preRace.addEventListener('change', function() {
+    if (preRace.checked) {
+        mc1.style.display = 'flex'
+        mc2.style.display= 'none'
+        race.checked = false;
+        label1.style.borderBottom = "2px solid #fff"
+        label2.style.borderBottom = "2px solid #333"
+    } else {
+        mc1.style.display = 'none'
+        mc2.style.display = 'block'
+        race.checked = true;
+        label1.style.borderBottom = "2px solid #333"   
+        label2.style.borderBottom = "2px solid #fff"
+    }
+});
+
+race.addEventListener('change', function() {
+    if (race.checked) {
+        mc1.style.display = 'none'
+        mc2.style.display= 'block'
+        preRace.checked = false;
+        label2.style.borderBottom = "2px solid #fff"
+        label1.style.borderBottom = "2px solid #333"
+    } else {
+        mc1.style.display = 'flex'
+        mc2.style.display = 'none'        
+        preRace.checked = true;
+        label2.style.borderBottom = "2px solid #333"   
+        label1.style.borderBottom = "2px solid #fff"
+    }
+});
+
 const camSections = document.querySelectorAll('.cam-section');
 const initial = document.querySelector('#initial');
 const midSections = Array.from(camSections).slice(1, 6);
@@ -10,6 +66,7 @@ const tab = document.querySelectorAll('.tab');
 const colorHelper = (elements, prop, color) => {
     elements.forEach(el => el.style[prop] = color);
 };
+
 
 const goGrayAll = () => {
     [camSections, whiteBlack].forEach(el =>

@@ -8,8 +8,14 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <main class="main-container">
-        <div class="all-elements">
+    <section id="top">
+        <label class="tab-label label1" for="pre-race">Pre-Race</label>
+        <input style="display:none" id="pre-race" type="checkbox" checked></input>
+        <label class="tab-label label2" for="race">Race</label>
+        <input style="display:none" id="race" type="checkbox"></input>
+    </section>
+    <main class="main-container1">
+        <div class="all-elements1">
             <div class="stripe" id="stripe1"></div>
             <div class="stripe" id="stripe2"></div>
             <section class="cols">
@@ -208,6 +214,37 @@
                     <li>You cannot create new Cameras with the position type of "On Car". You can't even override them, they will automatically reset back to their default settings every time you load into a session.</li>
                 </ul>
             </footer>
+        </div>
+    </main>
+      <main class="main-container2">
+        <div class="all-elements2">
+            <div class="stripe" id="stripe1"></div>
+            <div class="stripe" id="stripe2"></div>
+                <button id="msg1" class="btn">/all QUALIFYING REMINDER: If you crash and/or reset your car for any reason, you can no longer go back out on track. This is an OPEN quali session, so be mindful of others. GL!</button>
+                <section class="cam-section" id="initial" tabindex="0">
+                    <ol>
+                        <li>Go to the start of the first race</li>
+                        <li>Choose "LL_Helmet" cam</li>
+                        <li>Click the Camera buttton</li>
+                        <li><span class="tab">Config</span>: Deactivate "Use temporary edits"</li>
+                        <li><span class="tab">Camera Edit</span>: Make these edits:
+                            <div class="settings">
+                                <span class="white-black framed">X: -0.2</span>
+                                <span class="white-black framed">Y: 0.15</span>
+                                <span class="white-black framed">Z: 0.62</span>
+                            </div>
+                            <div class="settings">
+                                <span class="white-black framed">Y: -8.5</span>
+                                <span class="white-black framed">P: 4</span>
+                                <span class="framed empty">R: 0</span>
+                            </div>
+                            <div class="settings">
+                                <span class="white-black framed pov">POV: 70</span>
+                            </div>
+                            <li><span class="tab">Config</span>: Reactivate "Use temporary edits"</li>
+                        </li>
+                    </ol>
+                </section>
         </div>
     </main>
     <script src="script.js"></script>
