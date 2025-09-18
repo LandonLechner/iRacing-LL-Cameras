@@ -27,7 +27,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    line-height: 1.6rem;
+    line-height: 1.5rem;
 }
 
 .all-elements2 {
@@ -35,7 +35,7 @@ body {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    line-height: 1.6rem;
+    line-height: 1.5rem;
 }
 
 
@@ -85,7 +85,7 @@ ol {
 
 .btn {
     background-color: #29919f;
-    margin: 1rem 1rem 3rem;
+    margin: 4rem 1rem 3rem;
     width: 90vw;
     border-radius: 400px;
     color: white;
@@ -138,11 +138,25 @@ ol {
 .all-elements1 .cam-section:hover {
     background-color: #111;
     outline: 1px solid rgba(255, 255, 255, 0.2);
+    scale: 1;
+
 }
 
 .all-elements1 .cam-section:focus {
     background-color: #111;
     outline: 2px solid rgb(25, 117, 255);
+}
+
+.all-elements1 .cam-left:hover {
+    transform-origin: left;
+}
+
+.all-elements1 .cam-right:hover {
+    transform-origin: right;
+}
+
+.cam-race {
+    scale: 1.25;
 }
 
 .settings {
@@ -233,5 +247,9 @@ h2 {
 
     .btn {
         width: 800px;
+    }
+
+    .all-elements1 .cam-section:hover {
+    scale: 1.25;
     }
 }
