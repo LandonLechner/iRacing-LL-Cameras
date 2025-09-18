@@ -75,6 +75,7 @@ const goGrayAll = () => {
     camSections.forEach(el => {
         colorHelper(el.querySelectorAll('li'), "color", gray)
         colorHelper(el.querySelectorAll('.framed'), "border", "1px solid rgba(255, 255, 255, 0.2)");
+        colorHelper(el.querySelectorAll('.tab'), "text-shadow", "none");
     });
 
     camSections.forEach(el => colorHelper(el.querySelectorAll('.tab'), "border-bottom", "2px solid rgba(25, 117, 255, 0)"))
@@ -85,6 +86,7 @@ const resetColors = () => {
         colorHelper(el.querySelectorAll('li'), "color", "#ddd");
         colorHelper(el.querySelectorAll('.framed'), "border", "1px solid rgba(255, 255, 255, 0.2)");
         colorHelper(el.querySelectorAll('.tab'), "border-bottom", "2px solid rgba(25, 117, 255, 1)");
+        colorHelper(el.querySelectorAll('.tab'), "text-shadow", "0 4px 4px rgb(25, 117, 255)");
     });
     colorHelper(whiteBlack, "color", "#ddd");
     colorHelper(divider, "backgroundColor", "#888");
@@ -107,6 +109,7 @@ const focused = (el) => {
     colorHelper(divider, "backgroundColor", gray);
     colorHelper(el.querySelectorAll('.framed'), "border", "1px solid #888");
     colorHelper(el.querySelectorAll('.tab'), "border-bottom", "2px solid rgba(25, 117, 255, 1)");
+    colorHelper(el.querySelectorAll('.tab'), "text-shadow", "0 4px 4px rgb(25, 117, 255)");
 };
 
 camSections.forEach(el => {
