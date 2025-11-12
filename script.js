@@ -1,15 +1,21 @@
-let msg = document.querySelector(`#msg1`)
-let msgText = msg.textContent
+let msg1 = document.querySelector('#msg1');
+let msg1Text = msg1.textContent;
+let msg2 = document.querySelector('#msg2');
+let msg2Text = msg2.textContent;
 
-msg.addEventListener('click', function() {
-    navigator.clipboard.writeText(msg.textContent);
-        
-    msg.innerText = "Copied!";
-    
-    setTimeout(() => {
-        msg.innerText = msgText;
-    }, 1300);
-})
+function setupCopyElement(element, originalText) {
+    element.dataset.originalText = originalText;
+    element.addEventListener('click', function() {
+            navigator.clipboard.writeText(element.dataset.originalText);
+            element.innerText = "Copied!";
+            setTimeout(() => {
+                element.innerText = element.dataset.originalText;
+        }, 1300);
+    });
+}
+
+setupCopyElement(msg1, msg1Text);
+setupCopyElement(msg2, msg2Text);
 
 const preRace = document.querySelector('#pre-race');
 const race = document.querySelector('#race');
