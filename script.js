@@ -2,6 +2,8 @@ let msg1 = document.querySelector('#msg1');
 let msg1Text = msg1.textContent;
 let msg2 = document.querySelector('#msg2');
 let msg2Text = msg2.textContent;
+let msg3 = document.querySelector('#msg3');
+let msg3Text = msg3.textContent;
 
 function setupCopyElement(element, originalText) {
     element.dataset.originalText = originalText;
@@ -16,6 +18,7 @@ function setupCopyElement(element, originalText) {
 
 setupCopyElement(msg1, msg1Text);
 setupCopyElement(msg2, msg2Text);
+setupCopyElement(msg3, msg3Text);
 
 const preRace = document.querySelector('#pre-race');
 const race = document.querySelector('#race');
