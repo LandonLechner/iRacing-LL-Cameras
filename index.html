@@ -1,217 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iRacing LL Cameras</title>
-    <link rel="icon" href="data:,">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <section id="top">
-        <label class="tab-label label1" for="pre-race">Pre-Race</label>
-        <input style="display:none" id="pre-race" type="checkbox" checked></input>
-        <label class="tab-label label2" for="race">Race</label>
-        <input style="display:none" id="race" type="checkbox"></input>
-    </section>
-    <main class="main-container1">
-        <div class="all-elements1">
-            <div class="stripe" id="stripe1"></div>
-            <div class="stripe" id="stripe2"></div>
-            <section class="cols">
-                <section class="cam-section cam-left" id="initial" tabindex="0">
-                    <ol>
-                        <li>Select a car/driver that you expect to continue driving for the next 5 - 10 minutes</li>
-                        <li>Choose "Far Chase" cam</li>
-                        <li>Click the Camera buttton</li>
-                        <li><span class="tab">Config</span>: Deactivate "Use temporary edits"</li>
-                    </ol>
-                </section>
-                <div class="divider"></div>
-                <section class="cam-section cam-left" id="five-nine" tabindex="0">
-                    <ol start="5">
-                        <li><span class="tab">Group Edit</span>: Click <span class="plus framed">+</span></li>
-                        <li>Change Group name to <span class="cam-name">LL_Chase</span></li>
-                        <li><span class="tab">Camera Edit</span>: Click <span class="framed plus">+</span></li>
-                        <li><span class="tab">Group Edit</span>: Move previous Camera back to Available list on the right</li>
-                        <li><span class="tab">Camera Edit</span>: Make these edits:
-                            <div class="settings">
-                                <span class="white-black framed type">Chase, At Car</span>
-                                <span class="white-black framed pov">POV: 50</span>
-                            </div>
-                            <div class="settings">
-                                <span class="white-black framed">X: -13</span>
-                                <span class="framed empty">Y: 0</span>
-                                <span class="white-black framed">Z: 3</span>
-                            </div>
-                            <div class="settings">
-                                <span class="framed empty">Y: 0</span>
-                                <span class="framed empty">P: 0</span>
-                                <span class="framed empty">R: 0</span>
-                                <span class="empty framed">Mic: 9</span>
-                            </div>
-                        </li>
-                    </ol>
-                </section>
-                <div class="divider"></div>
-                <section class="cam-section cam-left" id="ten-fourteen" tabindex="0">
-                    <ol start="10">
-                        <li><span class="tab">Group Edit</span>: Click <span class="framed plus">+</span></li>
-                        <li>Change Group name to <span class="cam-name">LL_Top</span></li>
-                        <li><span class="tab">Camera Edit</span>: Click <span class="framed plus">+</span></li>
-                        <li><span class="tab">Group Edit</span>: Move previous Camera back to Available list on the right</li>
-                        <li><span class="tab">Camera Edit</span>: Make these edits:
-                            <div class="settings">
-                                <span class="white-black framed type">Chase, At Car</span>
-                                <span class="white-black framed pov">POV: 45</span>
-                            </div>
-                            <div class="settings">
-                                <span class="white-black framed">X: -4</span>
-                                <span class="framed empty">Y: 0</span>
-                                <span class="white-black framed">Z: 22</span>
-                            </div>
-                            <div class="settings">
-                                <span class="framed empty">Y: 0</span>
-                                <span class="framed empty">P: 0</span>
-                                <span class="framed empty">R: 0</span>
-                                <span class="empty framed">Mic: 0</span>
-                            </div>
-                        </li>
-                    </ol>
-                </section>
-            </section>
-            <section class="cols">
-                <div class="divider top-right-divider"></div>
-                <section class="cam-section" id="fifteen-nineteen" tabindex="0">
-                    <ol start="15">
-                        <li><span class="tab">Group Edit</span>: Click <span class="framed plus">+</span></li>
-                        <li>Change Group name to <span class="cam-name">LL_Helmet</span></li>
-                        <li>Move CamGyro to In Group list on the left</li>
-                        <li>Move previous Camera back to Available list on the right</li>
-                    </ol>
-                </section>    
-                <div class="divider"></div>
-                <section class="cam-section" id="twenty-twenty-four" tabindex="0">
-                    <ol start="20">
-                        <li><span class="tab">Group Edit</span>: Click <span class="framed plus">+</span></li>
-                        <li>Change Group name to <span class="cam-name">LL_Wing</span></li>
-                        <li><span class="tab">Camera Edit</span>: Click <span class="framed plus">+</span></li>
-                        <li><span class="tab">Group Edit</span>: Move previous Camera back to Available list on the right</li>
-                            <li><span class="tab">Camera Edit</span>: Make these edits:
-                                <div class="settings">
-                                    <span class="framed type">Chase, Static</span>
-                                    <span class="white-black framed pov">POV: 60</span>
-                                </div>
-                                <div class="settings">
-                                    <span class="white-black framed">X: 0.05</span>
-                                    <span class="empty framed">Y: 0</span>
-                                    <span class="white-black framed">Z: 1.6</span>
-                                </div>
-                                <div class="settings">
-                                    <span class="framed empty">Y: 0</span>
-                                    <span class="white-black framed">P: -80</span>
-                                    <span class="framed empty">R: 0</span>
-                                    <span class="white-black framed">Mic: 0</span>
-                                </div>
-                            </li>
-                    </ol>    
-                </section>
-                <div class="divider"></div>
-                <section class="cam-section" id="twenty-five-twenty-nine" tabindex="0">
-                    <ol start="25">
-                        <li><span class="tab">Group Edit</span>: Click <span class="framed plus">+</span></li>
-                        <li>Change Group name to <span class="cam-name">LL_Roof</span></li>
-                        <li><span class="tab">Camera Edit</span>: Click <span class="framed plus">+</span></li>
-                        <li><span class="tab">Group Edit</span>: Move previous Camera back to Available list on the right</li>
-                            <li><span class="tab">Camera Edit</span>: Make these edits:
-                                <div class="settings">
-                                    <span class="framed type">Chase, Static</span>
-                                    <span class="white-black framed pov">POV: 60</span>
-                                </div>
-                                <div class="settings">
-                                    <span class="white-black framed">X: -1</span>
-                                    <span class="empty framed">Y: 0</span>
-                                    <span class="white-black framed">Z: 1.8</span>
-                                </div>
-                                <div class="settings">
-                                    <span class="empty framed">Y: 0</span>
-                                    <span class="white-black framed">P: -43</span>
-                                    <span class="framed empty">R: 0</span>
-                                    <span class="white-black framed">Mic: 0</span>
-                                </div>
-                            </li>
-                    </ol>      
-                </section>
-            </section>
-            <section class="cols">
-                <div class="divider top-right-divider"></div>
-                <section class="cam-section cam-right" id="thirty-thirty-four" tabindex="0">
-                    <ol start="30">
-                        <li><span class="tab">Group Edit</span>: Click <span class="framed plus">+</span></li>
-                        <li>Change Group name to <span class="cam-name">LL_Drone</span></li>
-                        <li><span class="tab">Camera Edit</span>: Click <span class="framed plus">+</span></li>
-                        <li><span class="tab">Group Edit</span>: Move previous Camera back to Available list on the right</li>
-                            <li><span class="tab">Camera Edit</span>: Make these edits:
-                                <div class="settings">
-                                    <span class="framed type">Chopper, At Group</span>
-                                    <span class="white-black framed pov">POV: 35</span>
-                                </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>iRacing LL Cameras</title>
+        <link rel="icon" href="data:,">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <section id="top">
+            <label class="tab-label label1" for="pre-race">Pre-Race</label>
+            <input style="display:none" id="pre-race" type="checkbox" checked></input>
+            <label class="tab-label label2" for="race">Race</label>
+            <input style="display:none" id="race" type="checkbox"></input>
+        </section>
+        <main class="main-container1">
+            <div class="all-elements1">
+                <div class="stripe" id="stripe1"></div>
+                <div class="stripe" id="stripe2"></div>
+                <section class="cols">
+
+                    <!-- Initial -->
+                    <section class="cam-section cam-left" id="initial">
+                        <ol>
+                            <li>Focus on a car that you expect to continue driving for the next 5 minutes</li>
+                            <li>Select the "Chopper" cam</li>
+                            <li>Open the Camera Tool</li>
+                            <li><span class="tab">Config</span>: Deactivate "Use temporary edits"</li>
+                        </ol>
+                    </section>
+                    <div class="divider"></div>
+                    <section class="cam-section cam-left" id="five-seven" >
+                        <ol start="5">
+                            <li><span class="tab">Group Edit</span>: Click <span class="plus framed">+</span></li>
+                            <li>Change Group name to <span class="cam-name">LL_Track</span></li> 
+                            <li>Move to the top of the Group list</li>
+                        </ol>
+                    </section>
+                    <div class="divider"></div>
+                    <section class="cam-section cam-left" id="eigth-ten" >
+                        <ol start="8">
+                            <li>Click <span class="plus framed">+</span></li>
+                            <li>Change Group name to <span class="cam-name">LL_Car</span></li> 
+                            <li>Move to the top of the Group list</li>
+                        </ol>
+                    </section>
+                    <div class="divider"></div>
+
+
+
+                    <!-- LL_Drone -->
+                    <section class="cam-section cam-left" id="eleven-seventeen">
+                        <ol start="11">
+                            <li>Click <span class="plus framed">+</span></li>
+                            <li>Change Group name to <span class="cam-name">LL_Drone</span></li>
+                            <li><span class="tab">Camera Edit</span>: Click <span class="framed plus">+</span></li>
+                            <li>Change camera name to LL_Drone</li>
+                            <li>Make these edits:
                                 <div class="settings">
                                     <span class="white-black framed">X: -15</span>
-                                    <span class="empty framed">Y: 0</span>
-                                    <span class="white-black framed">Z: 4</span>
+                                    <span class="white-black framed">Z: 3</span>
+                                    <span class="white-black framed pov">POV: 30</span>
                                 </div>
                                 <div class="settings">
-                                    <span class="empty framed">Y: 0</span>
-                                    <span class="empty framed">P: 0</span>
-                                    <span class="framed empty">R: 0</span>
-                                    <span class="white-black framed">Mic: 9</span>
+                                    <span class="white-black framed">Focus Depth: 26</span>
+                                    <span class="white-black framed">Aperture: 1.0</span>
                                 </div>
                             </li>
-                    </ol>    
+                            <li><span class="tab">Group Edit</span>: Move previous Camera back to Available list</li>
+                            <li>Move group to the top of the Group list</li>
+                        </ol>    
+                    </section>
                 </section>
-                <div class="divider"></div>
-                <section class="cam-section cam-right" id="thirty-five-thirty-nine" tabindex="0">
-                    <ol start="35">
-                        <li><span class="tab">Group Edit</span>: Click <span class="framed plus">+</span></li>
-                        <li>Change Group name to <span class="cam-name">LL_Cockpit</span></li>
-                        <li>Move CamCockpit to In Group list on the left</li>
-                        <li>Move previous Camera back to Available list on the right</li>
-                        <li><span class="tab">Camera Edit</span>: Make this edits:
-                            <div class="settings">
-                                <span class="empty framed type">Chase, Static</span>
-                                <span class="white-black framed pov">POV: 80</span>
-                            </div>
-                            <div class="settings">
-                                <span class="empty framed">X: 0</span>
-                                <span class="empty framed">Y: 0</span>
-                                <span class="empty framed">Z: 0</span>
-                            </div>
-                            <div class="settings">
-                                <span class="empty framed">Y: 0</span>
-                                <span class="empty framed">P: 0</span>
-                                <span class="framed empty">R: 0</span>
-                                <span class="empty framed">Mic: 9</span>
-                            </div>
-                        </li>
-                        </li>
-                    </ol>
+                
+                
+                <div class="divider top-right-divider"></div>
+                <section class="cols">
+                   
+                   
+                    <!-- LL_Top -->
+                    <section class="cam-section" id="eighteen-twenty-five">
+                        <ol start="18">
+                            <li>Select the "Chase" cam</li>
+                            <li>Click <span class="plus framed">+</span></li>
+                            <li>Change Group name to <span class="cam-name">LL_Top</span></li>
+                            <li><span class="tab">Camera Edit</span>: Click <span class="framed plus">+</span></li>
+                            <li>Change camera name to LL_Top</li>
+                            <li>Make these edits:
+                                <div class="settings">
+                                    <span class="white-black framed">X: -4</span>
+                                    <span class="white-black framed">Z: 22</span>
+                                    <span class="white-black framed pov">POV: 100</span>
+                                </div>
+                            </li>
+                            <li><span class="tab">Group Edit</span>: Move previous Camera back to Available list</li>
+                            <li>Move group to the top of the Group list</li>
+                        </ol> 
+                    </section>
+                
+                
+                
+                
+                    <!-- LL_Chase -->
+                    <div class="divider"></div>
+                    <section class="cam-section" id="twenty-six-thirty-two">
+                        <ol start="26">
+                            <li>Click <span class="plus framed">+</span></li>
+                            <li>Change Group name to <span class="cam-name">LL_Chase</span></li>
+                            <li><span class="tab">Camera Edit</span>: Click <span class="framed plus">+</span></li>
+                            <li>Change camera name to LL_Chase</li>
+                            <li>Make these edits:
+                                <div class="settings">
+                                    <span class="white-black framed">X: -13</span>
+                                    <span class="white-black framed">Z: 3</span>
+                                    <span class="white-black framed pov">POV: 50</span>
+                                </div>
+                            </li>
+                            <li><span class="tab">Group Edit</span>: Move previous Camera back to Available list on the right</li>
+                            <li>Move LL_Chase Group to the top of the Group list</li>
+                        </ol>
+                    </section>
                 </section>
+                
+                
+                <section class="cols">   
+                    <div class="divider top-right-divider"></div>   
+                    
+                    
+                    
+                    <!-- LL_Car -->
+                    <section class="cam-section cam-right" id="thirty-three-thirty-four">
+                        <ol start="33">
+                            <li>Select the <span class="cam-name">LL_Car</span> cam</li>
+                            <li>Move the following cameras to "In Group"
+                                <ol>
+                                    <li>CamGyro</li>
+                                    <li>CamLF Susp</li>
+                                    <li>CamLR Susp</li>
+                                    <li>CamNose</li>
+                                    <li>CamGearbox</li>
+                                    <li>CamRF Susp</li>
+                                    <li>CamRR Susp</li>
+                                    <li>LL_Drone</li>
+                                    <li>LL_Top</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </section>
+
+
+                <!-- Last Two -->
                 <div class="divider"></div>   
-                <section class="cam-section cam-right" id="last-two" tabindex="0">
-                    <ol start="40">
+                <section class="cam-section cam-right" id="last-two">
+                    <ol start=35">
                         <li><span class="framed" id="save-track">Save Track</span> as <span class="cam-name">LL_track.cam</span></li>
                         <li><span class="tab">Config</span>: Reactivate "Use temporary edits"</li>
                     </ol>
                 </section>
+
+
+
+
             </section>
-            <footer id="footer">
+        <footer id="footer">
                 <h2>Also keep in mind...</h3>
                 <ul>
-                    <li>If the focus car changes unexpectedly during the process, and you can only select the scenic Camera, hitting the live button should allow you to once again choose other Cameras and resume the process. If this still does not work, try to close out of the camera and open it up again.</li>
-                    <li>Regarding display order, note that when a new Camera Group is created, it will always be listed after the currently active Camera Group.</li>
-                    <li>You cannot reorder Camera Groups once they are created.</li>
-                    <li>You cannot create new Cameras with the position type of "On Car". You can't even override them, they will automatically reset back to their default settings every time you load into a session.</li>
+                    <li>If the focus car changes unexpectedly during the process, try to close out of the camera and open it up again.</li>
                 </ul>
             </footer>
         </div>
@@ -220,33 +174,9 @@
         <div class="all-elements2">
             <div class="stripe" id="stripe1"></div>
             <div class="stripe" id="stripe2"></div>
-                <button id="msg1" class="btn">/all NEW OPEN QUALIFYING FORMAT! Spit into two groups based on practice lap time standings. Bottom half goes out during the first 10 minutes, then returns to the pits.</button>
+                <button id="msg1" class="btn">/all NEW OPEN QUALIFYING FORMAT! Spit into two groups based on practice lap time standings. Bottom half goes out during the first 10 minutes, then returns to the pits. The top group may exit the pits at the 10 minute mark.</button>
                 <button id="msg2" class="btn">/all Once we are 9:45 into the session, the first group can no longer start new laps. Car resets are still prohibited outside of pit lane. Go out in the first group If your best practice lap was slower than a </button>
-                <button id="msg3" class="btn">/all Most of us take full fuel for our endurance races. If your setup fails inspection with full fuel, decrease (left arrow) the Left Front "Spring Perch Offset", then the Right Front "Spring Perch Offset", one click on each side until you pass inspection.</button>
-                <section class="cam-section cam-race" id="initial" tabindex="0">
-                    <ol>
-                        <li>Go to the start of the first race</li>
-                        <li>Choose "LL_Helmet" cam</li>
-                        <li>Click the Camera buttton</li>
-                        <li><span class="tab">Config</span>: Deactivate "Use temporary edits"</li>
-                        <li><span class="tab">Camera Edit</span>: Make these edits:
-                            <div class="settings">
-                                <span class="white-black framed">X: -0.2</span>
-                                <span class="white-black framed">Y: 0.15</span>
-                                <span class="white-black framed">Z: 0.62</span>
-                            </div>
-                            <div class="settings">
-                                <span class="white-black framed">Y: -8.5</span>
-                                <span class="white-black framed">P: 4</span>
-                                <span class="framed empty">R: 0</span>
-                            </div>
-                            <div class="settings">
-                                <span class="white-black framed pov">POV: 70</span>
-                            </div>
-                            <li><span class="tab">Config</span>: Reactivate "Use temporary edits"</li>
-                        </li>
-                    </ol>
-                </section>
+                <button id="msg3" class="btn">/all Most of us take full fuel for endurance races. If your setup fails inspection with full fuel, decrease (left arrow) the Left Front "Spring Perch Offset", then the Right Front "Spring Perch Offset", one click on each side until you pass inspection.</button>
         </div>
     </main>
     <script src="script.js"></script>
